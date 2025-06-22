@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sein Minn</title>
+  <style>
+    body { margin:0; font-family: sans-serif; line-height:1.6; color:#333; }
+    header { background:#cc1b00; color:#fff; padding:20px; }
+    nav { max-width: 1000px; margin: auto; display:flex; justify-content:space-between; align-items:center; }
+    nav a { color:white; text-decoration:none; margin:0 10px; }
+    .hero { background:#f0f0f0; padding:80px 20px; text-align:center; }
+    .hero h1 { margin:0; font-size:2.5rem; }
+    section { max-width:1000px; margin:40px auto; padding:0 20px; }
+    .about img { max-width:200px; border-radius:50%; }
+    .publcations { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card { border:1px solid #ccc; padding:20px; width:280px; border-radius:8px; }
+    .contact a { color:#0077cc; text-decoration:none; }
+    footer { text-align:center; padding:20px; background:#f9f9f9; font-size:0.9rem; }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .text {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .image {
+      flex-shrink: 0;
+    }
+    .image img {
+      width: 200px; /* You can control size here */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        text-align: right;
+      }
+      .text {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    }
+    li {
+    margin-bottom: 10px;
+    }
+    h2 {
+    margin-top: 40px;
+    font-size: 1.5em;
+    color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><strong>Sein Minn</strong></div>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Sein Minn <br> Ph.D. (Université de Montréal) </h2>
+    <p>
+        <a href="https://www.linkedin.com/in/sein-minn-4bb9b584/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/simon-tan" target="_blank">GitHub</a> <br>
+        <a href="https://scholar.google.ca/citations?user=4cXYLugAAAAJ&hl=en" target="_blank">GoogleScholar</a> |
+        <a href="https://www.researchgate.net/scientific-contributions/Sein-Minn-2106569817/publications/2#articles" target="_blank">ResearchGate</a>
+      </p>
+    <div class="image">
+        <img src="sein-minn.jpg" alt="Sein Minn">
+    </div>
+    
+    
+  </div>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    
+    <p style="text-align: justify;"> I am an AI researcher with a strong interdisciplinary focus, working at the intersection of artificial intelligence, education, and the behavioral sciences. 
+        My research interests encompass user modeling, data mining, big data analysis, Learning Science, cognitive modeling, assessment, and psychometrics. 
+        I am particularly passionate about applying AI techniques to educational contexts by leveraging data-driven insights to improve teaching, learning, and assessment. 
+        By integrating methods from computer science and the learning sciences, my work aims to build intelligent systems that understand learner behavior, personalize instruction, 
+        and enhance educational outcomes at scale.
+        <br>
+        <br>
+        I wroked at <a href="https://uqam.ca/" target="_blank">AI Research Center - Université du Québec à Montréal</a>, Montreal, Canada. I also worked as a researcher at <a href="https://www.polytechnique.edu/en" target="_blank">École Polytechnique, 
+        Institut Polytechnique de Paris</a>, <a href="https://www.cnrs.fr/fr" target="_blank">CNRS</a> and <a href="https://www.inria.fr/en" target="_blank">Inria Saclay Île-De-France</a> in France. 
+
+        I received  Ph.D. in Computer Engineering from <a href="https://www.umontreal.ca/en/" target="_blank">University of Montreal</a> in Canada. 
+        I also was a research fellow at <a href="https://www.inria.fr/fr" target="_blank">Inria</a> in France, <a href="https://smu.edu.sg/" target="_blank">Singapore Management University</a> in 
+        Singapore, <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics</a> in Japan, and <a href="https://www.hqu.edu.cn/" target="_blank">Huaqiao University</a> in 
+        China.
+        </p>
+  </section>
+
+
+  <section id="publications" class="publications">
+
+    
+  
+  <h2> Recent Publications</h2> 
+  <ol>
+    <li> <strong>Sein Minn</strong> and Roger Nkambou, "Enhanced Interpretable Knowledge Tracing for Students’ Performance Prediction with Human-understandable Feature Space",  <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED</a>, 2025 (accepted)</li>
+    <li> <strong>Sein Minn</strong>,"LaPLACE: Probabilistic Local Model-Agnostic Causal Explanations", Arxiv 2023 [preprint] <a href="https://arxiv.org/pdf/2310.00570.pdf" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/LaPLACE" target="_blank">code</a></li>
+    <li> <strong>Sein Minn</strong> and Shunkai Fu, "Fast & Efficient Learning of Bayesian Networks from Data: Knowledge Discovery and Causality", ICDM 2023, CXAI <a href="https://www.computer.org/csdl/proceedings-article/icdmw/2023/816400a966/1UjHSKsoytO" target="_blank">paper</a></li>
+    <li> <strong>Sein Minn</strong>, "AI-assisted Knowledge Assessment Techniques for Adaptive Learning Environments", [ Computers and Education: Artificial Intelligence, 2022] <a href="https://www.sciencedirect.com/science/article/pii/S2666920X22000054" target="_blank">paper</a></li>
+    <li> <strong>Sein Minn</strong>, Jill-Jênn Vie, Koh Takeuchi, Hisashi Kashima, and Feida Zhu, "Interpretable Knowledge Tracing: Simple and Efficient Way for Student Modeling with Causal Relations" AAAI, 2022 <a href="https://cdn.aaai.org/ojs/21560/21560-13-25573-1-2-20220628.pdf" target="_blank">paper</a>, <a href="https://github.com/simon-tan/IKT" target="_blank">code</a></li>
+  </ol>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Advancing Personalized Learning through AI-Driven Educational Technologies</h3>
+        <p style="text-align: justify;">This research project investigates the integration of Artificial Intelligence (AI) into educational environments to enhance personalized learning and improve student outcomes. 
+            Positioned at the intersection of Learning Science and AI in Education, the project explores how intelligent systems can adaptively tailor instructional content and learning strategies 
+            to individual learner needs. 
+            
+            The core of the project involves designing and implementing machine learning models that analyze learner data (such as students' performance, engagement patterns, 
+            and learning behaviors) to generate personalized learning pathways. These pathways support timely, data-driven interventions aimed at maximizing learning efficiency 
+            and effectiveness. By leveraging predictive analytics, the project seeks to anticipate learner challenges and proactively guide students through customized instructional experiences.
+            
+            In addition to model development, the project evaluates the impact of AI-assisted educational interventions on key indicators such as learner engagement, 
+            achievement, and overall satisfaction. It also explores the design of real-time feedback and recommendation systems that provide ongoing, adaptive support 
+            within both formal education and professional training contexts.
+            
+            By bridging Learning Science with AI innovation, this project aims to transform the learning experience through scalable, intelligent systems that promote equity, adaptability, 
+            and success in diverse educational settings.</p>
+        
+        <h4> Relevant Publications</h4> 
+           <ol>
+                <li> EIKT, AIED, 2025   <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED</a>(accepted) </li>
+                <li> IKT, AAAI, 2022 <a href="https://cdn.aaai.org/ojs/21560/21560-13-25573-1-2-20220628.pdf" target="_blank">paper</a>, <a href="https://github.com/simon-tan/IKT" target="_blank">code</a></li>
+           </ol>
+        
+      </div>
+      <div class="card">
+        <h3>Interpretable Explanations for Complex AI Models on Tabular Data Using Bayesian Networks and Markov Blankets </h3>
+        <p style="text-align: justify;"> This research project focuses on providing interpretable explanations for complex AI model decisions on tabular data by leveraging Bayesian Networks and the Markov Blanket : 
+            a probabilistic graphical modeling framework well-suited for capturing dependencies and causal relationships among variables. Tabular data is ubiquitous across domains such as 
+            healthcare, education, and finance; however, the lack of transparency in many high-performing machine learning models presents a major barrier to their use in decision-critical 
+            applications. 
+            Bayesian Networks offer a principled approach to modeling conditional dependencies and enable transparent, structured reasoning. A key strength of this approach lies in the use of 
+            the Markov Blanket, which identifies the minimal and most relevant subset of features that directly influence a target variable. This not only enhances model interpretability 
+            but also improves computational efficiency by focusing on the most informative variables. These models are particularly effective in uncovering causal and probabilistic relationships 
+            in data, making them a robust foundation for explainable decision-support systems. 
+            Within the broader field of Explainable AI (XAI), my research emphasizes algorithmic strategies to enhance the interpretability of complex models applied to 
+            structured tabular data. By developing methodologies that allow users to trace, understand, and trust the reasoning behind model predictions, this project seeks to bridge 
+            the gap between high predictive performance and interpretability.
+            
+        </p>
+        <h4> Relevant Publications</h4> 
+        <ol>
+            <li> LAPLACE, Arxiv, 2023 <a href="https://arxiv.org/pdf/2310.00570.pdf" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/LaPLACE" target="_blank">code</a> </li>
+            <li> (FSBN & SSBN), ICDM 2023, CXAI <a href="https://www.computer.org/csdl/proceedings-article/icdmw/2023/816400a966/1UjHSKsoytO" target="_blank">paper</a></li>
+
+        </ol>
+      </div>
+      <!-- Add more project cards -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email:</p>
+    <p>sein.minn.cs @ gmail.com</p>
+    
+  </section>
+
+  <footer>
+    © 2025 Sein Minn – Built with HTML & CSS
+  </footer>
+
+</body>
+</html>
