@@ -1,269 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sein Minn</title>
-  <style>
-    body { margin:0; font-family: sans-serif; line-height:1.6; color:#333; }
-    header { background:#cc1b00; color:#fff; padding:20px; }
-    nav { max-width: 1000px; margin: auto; display:flex; justify-content:space-between; align-items:center; }
-    nav a { color:white; text-decoration:none; margin:0 10px; }
-    .hero { background:#f0f0f0; padding:80px 20px; text-align:center; }
-    .hero h1 { margin:0; font-size:2.5rem; }
-    section { max-width:1000px; margin:40px auto; padding:0 20px; }
-    .about img { max-width:200px; border-radius:50%; }
-    .publcations { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .service { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .activities { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .card { border:1px solid #ccc; padding:20px; width:380px; border-radius:8px; }
-    .contact a { color:#0077cc; text-decoration:none; }
-    footer { text-align:center; padding:20px; background:#f9f9f9; font-size:0.9rem; }
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .text {
-      flex: 1;
-      padding-right: 20px;
-    }
-    .image {
-      flex-shrink: 0;
-    }
-    .image img {
-      width: 200px; /* You can control size here */
-      height: auto;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 700px) {
-      .container {
-        flex-direction: column;
-        text-align: right;
-      }
-      .text {
-        padding-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-
-    ul {
-    margin-left: 20px;
-    padding-left: 20px;
-    }
-    li {
-    margin-bottom: 10px;
-    }
-    h2 {
-    margin-top: 40px;
-    font-size: 1.5em;
-    color: #333;
-    }
-  </style>
+  <title>About - Sein Minn</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav >
+    <a href="index.html" class="nav-link active">About</a>
+    <a href="publications.html" class="nav-link">Publications</a>    
+    <a href="teaching.html" class="nav-link">Teaching</a>
+    <a href="activities.html" class="nav-link">Service</a>
+    <a href="lab.html" class="nav-link">HI+AI Lab</a>
+  </nav>
+  
 
-  <header>
-    <nav>
-      <div class="logo"><strong>Sein Minn</strong></div>
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#service">Service</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+  <script>
+    const links = document.querySelectorAll("nav a");
+    const currentPage = window.location.pathname.split("/").pop();
+  
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 
-  <div class="container">
-    <h2>Sein Minn <br> Ph.D. (Université de Montréal) </h2>
-    <p>
-        <a href="https://www.linkedin.com/in/sein-minn-4bb9b584/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/simon-tan" target="_blank">GitHub</a> <br>
-        <a href="https://scholar.google.ca/citations?user=4cXYLugAAAAJ&hl=en" target="_blank">GoogleScholar</a> |
-        <a href="https://www.researchgate.net/scientific-contributions/Sein-Minn-2106569817/publications/2#articles" target="_blank">ResearchGate</a>
-      </p>
-    <div class="image">
-        <img src="sein-minn.jpg" alt="Sein Minn">
-    </div>
-    
-    
-  </div>
+  <div class="container1">
+    <h2 style="color: white;">Sein Minn, Ph.D. <a href="https://www.umontreal.ca/en/" style="color: white;" target="_blank">UdeM</a> <br> Assistant Professor  <br> <a href="https://ait.ac.th/" style="color: white;" target="_blank">Asian Institute of Technology</a>  </h2>
+ </div>
 
   <section id="about" class="about">
-    <h2>About Me</h2>
     
-    <p style="text-align: justify;"> I am an AI researcher with a strong interdisciplinary focus, working at the intersection of artificial intelligence, education, and the behavioral sciences. 
-        My research interests encompass user modeling, machine learning, data mining, big data analysis, cognitive modeling, assessment, and psychometrics. 
-        I am particularly passionate about applying AI techniques to educational contexts by leveraging data-driven insights to improve teaching, learning, and assessment. 
-        By integrating methods from computer science and the learning sciences, my work aims to build intelligent systems that understand learner behavior, personalize instruction, 
-        and enhance educational outcomes at scale.
-        <br>
-        <br>
-        I am also an incoming Assistant Professor at the <a href="https://ait.ac.th/" target="_blank">Asian Institute of Technology (AIT)</a> in Thailand. Prior to joining AIT, I worked at <a href="https://uqam.ca/" target="_blank">AI Research Center - Université du Québec à Montréal</a>, Montreal, Canada. I also worked as a postdoc researcher at <a href="https://www.polytechnique.edu/en" target="_blank">École Polytechnique, 
-        Institut Polytechnique de Paris</a>, <a href="https://www.cnrs.fr/fr" target="_blank">CNRS</a> and <a href="https://www.inria.fr/en" target="_blank">Inria Saclay Île-De-France</a> in France. 
 
-        I received  Ph.D. in Computer Engineering from <a href="https://www.umontreal.ca/en/" target="_blank">University of Montreal</a> in Canada. 
-        I also was a research fellow at <a href="https://www.inria.fr/fr" target="_blank">Inria</a> in France, <a href="https://smu.edu.sg/" target="_blank">Singapore Management University</a> in 
+    <p style="text-align: right;">
+        <a href="https://www.linkedin.com/in/sein-minn-4bb9b584/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/simon-tan" target="_blank">GitHub</a> |
+        <a href="https://scholar.google.ca/citations?user=4cXYLugAAAAJ&hl=en" target="_blank">GoogleScholar</a> |
+        <a href="https://www.researchgate.net/scientific-contributions/Sein-Minn-2106569817/publications/2#articles" target="_blank">ResearchGate</a>
+      </p>   
+    
+    <p style="text-align: justify;"> 
+      <img src="sein-minn.png"" alt="Sein Minn" style="float: left; margin-right: 20px; width: 200px; height: auto;  border-radius: 8px;"> 
+      
+      I am an AI researcher focused on building adaptive, interpretable systems at the intersection of machine learning, user modeling, and cognitive modeling.
+      While my recent work centers on education, I am broadly committed to human-centered and explainable AI, aiming for accurate, transparent models 
+      that support trust in sensitive applications.
+      
+      <br> 
+        I am an incoming assistant professor at the <a href="https://ait.ac.th/" target="_blank">Asian Institute of Technology (AIT)</a> in Thailand. 
+        Prior to joining AIT, I worked at AI Research Center, <a href="https://uqam.ca/" target="_blank"> Université du Québec à Montréal</a>, Montreal, Canada,
+        and <a href="https://www.polytechnique.edu/en" target="_blank">École Polytechnique, 
+        Institut Polytechnique de Paris</a>, <a href="https://www.cnrs.fr/fr" target="_blank"> French National Centre for Scientific Research (CNRS)</a> 
+        and <a href="https://www.inria.fr/en" target="_blank"> French Institute for Research in Computer Science and Automation (Inria)</a> in France. 
+       
+        I received a Ph.D. in Computer Engineering from <a href="https://www.umontreal.ca/en/" target="_blank">Université de Montréal</a> in Canada. 
+        I also spent time at several international institutions, including <a href="https://smu.edu.sg/" target="_blank">Singapore Management University</a> in 
         Singapore, <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics</a> in Japan, and <a href="https://www.hqu.edu.cn/" target="_blank">Huaqiao University</a> in 
         China.
         </p>
   </section>
 
+  <section id="news" class="about">
+    <h2>News</h2> 
+    <ul style="font-size: 15px;">
+      <li> Jul 2025, I will serve as a Program Committee member for <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank">AAAI 2026</a>, one of the premier conferences in artificial intelligence. </li>
+      <li> Jul 2025, I will be joining the <a href="https://ait.ac.th/" target="_blank">Asian Institute of Technology</a>, Thailand as an Assistant Professor.</li>
 
-  <section id="publications" class="publications">    
-  
-  <h2> Recent Publications</h2> 
-  <ol>
-    <li> <strong>Sein Minn</strong> and Roger Nkambou, "Enhanced Interpretable Knowledge Tracing for Students’ Performance Prediction with Human-understandable Feature Space",  <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED</a>, 2025 (accepted)</li>
-    <li> <strong>Sein Minn</strong>,"LaPLACE: Probabilistic Local Model-Agnostic Causal Explanations", Arxiv 2023 [preprint] <a href="https://arxiv.org/pdf/2310.00570.pdf" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/LaPLACE" target="_blank">code</a></li>
-    <li> <strong>Sein Minn</strong> and Shunkai Fu, "Fast & Efficient Learning of Bayesian Networks from Data: Knowledge Discovery and Causality", ICDM 2023, CXAI <a href="https://www.computer.org/csdl/proceedings-article/icdmw/2023/816400a966/1UjHSKsoytO" target="_blank">paper</a></li>
-    <li> <strong>Sein Minn</strong>, "AI-assisted Knowledge Assessment Techniques for Adaptive Learning Environments", [ Computers and Education: Artificial Intelligence, 2022] <a href="https://www.sciencedirect.com/science/article/pii/S2666920X22000054" target="_blank">paper</a></li>
-    <li> <strong>Sein Minn</strong>, Jill-Jênn Vie, Koh Takeuchi, Hisashi Kashima, and Feida Zhu, "Interpretable Knowledge Tracing: Simple and Efficient Way for Student Modeling with Causal Relations" AAAI, 2022 <a href="https://cdn.aaai.org/ojs/21560/21560-13-25573-1-2-20220628.pdf" target="_blank">paper</a>, <a href="https://github.com/simon-tan/IKT" target="_blank">code</a></li>
-  </ol>
+      <li> June 2025, I will serve as a Program Committee member for <a href="https://www3.cs.stonybrook.edu/~icdm2025/index.html" target="_blank">ICDM 2025</a>, a leading conference in Data Mining.</li>
+      <li> May 2025,  Our paper has been accepted at <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED 2025</a> (Artificial Intelligence in Education), one of the top conferences in the field of AI in education.</li>
+      <li> May 2025, I will serve as a Program Committee member for <a href="https://icce2025.study.iitm.ac.in/" target="_blank">ICCE 2025</a> and ICCE Sub-Conference on Artificial Intelligence in Education / Intelligent Tutoring System (AIED/ITS) and Adaptive Learning.  </li>
+      <li> Feb 2025, I will serve as a Program Committee member for <a href="https://conferences.cis.um.edu.mo/ieeebigdata2025/" target="_blank">BigData 2025</a>, one of the top conferences in Big Data and Data Mining..</li>
+      <li> Feb 2025, I will serve as a Program Committee member for <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED 2025</a> and <a href="https://educationaldatamining.org/edm2025/" target="_blank">EDM 2025</a>, leading conferences in the field of AI in education.</li>
+      
+   </ul> 
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Advancing Personalized Learning through AI-Driven Educational Technologies</h3>
-        <p style="text-align: justify;">This research project investigates the integration of Artificial Intelligence (AI) into educational environments to enhance personalized learning and improve student outcomes. 
-            Positioned at the intersection of Learning Science and AI in Education, the project explores how intelligent systems can adaptively tailor instructional content and learning strategies 
-            to individual learner needs. 
-            
-            The core of the project involves designing and implementing machine learning models that analyze learner data (such as students' performance, engagement patterns, 
-            and learning behaviors) to generate personalized learning pathways. These pathways support timely, data-driven interventions aimed at maximizing learning efficiency 
-            and effectiveness. By leveraging predictive analytics, the project seeks to anticipate learner challenges and proactively guide students through customized instructional experiences.
-            
-            In addition to model development, the project evaluates the impact of AI-assisted educational interventions on key indicators such as learner engagement, 
-            achievement, and overall satisfaction. It also explores the design of real-time feedback and recommendation systems that provide ongoing, adaptive support 
-            within both formal education and professional training contexts.
-            
-            By bridging Learning Science with AI innovation, this project aims to transform the learning experience through scalable, intelligent systems that promote equity, adaptability, 
-            and success in diverse educational settings.</p>
-        
-        <h4> Relevant Publications</h4> 
-           <ol>
-                <li> EIKT, AIED, 2025   <a href="https://aied2025.itd.cnr.it/" target="_blank">AIED</a>(accepted) </li>
-                <li> Privacy-Preserving Synthetic Data Generation, EC-TEL, 2018 <a href="https://arxiv.org/pdf/2207.03202" target="_blank">paper</a></li>
-                <li> IKT, AAAI, 2022 <a href="https://cdn.aaai.org/ojs/21560/21560-13-25573-1-2-20220628.pdf" target="_blank">paper</a>, <a href="https://github.com/simon-tan/IKT" target="_blank">code</a></li>
-                <li> BKT-LSTM, Arxiv, 2021 <a href="https://arxiv.org/pdf/2012.12218" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/BKT-LSTM" target="_blank">code</a></li>
-                <li> DSCMN, PAKDD, 2019 <a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5350&context=sis_research" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/DSCMN" target="_blank">code</a></li>
-                <li> DKT-DSC, ICDM, 2018 <a href="https://arxiv.org/pdf/1809.08713" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/DKT-DSC" target="_blank">code</a></li>
-                <li> KT, ICDM, 2018 <a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5330&context=sis_research" target="_blank">paper</a></li>
-                <li> Q-matrix Reinment, EC-TEL, 2016 <a href="https://www.professeurs.polymtl.ca/michel.desmarais/Publications-Michel/EC-TEL_2016_paper_185.pdf" target="_blank">paper</a></li>
-             
-             
-           </ol>
-        
-      </div>
-      <div class="card">
-        <h3>Interpretable Explanations for Complex AI Models on Tabular Data Using Bayesian Networks and Markov Blankets </h3>
-        <p style="text-align: justify;"> This research project focuses on providing interpretable explanations for complex AI model decisions on tabular data by leveraging Bayesian Networks and the Markov Blanket : 
-            a probabilistic graphical modeling framework well-suited for capturing dependencies and causal relationships among variables. Tabular data is ubiquitous across domains such as 
-            healthcare, education, and finance; however, the lack of transparency in many high-performing machine learning models presents a major barrier to their use in decision-critical 
-            applications. 
-            Bayesian Networks offer a principled approach to modeling conditional dependencies, enabling transparent and structured reasoning. A key strength of this approach lies in the use of 
-            the Markov Blanket, which identifies the minimal and most relevant subset of features that directly influence a target variable. This not only enhances model interpretability 
-            but also improves computational efficiency by focusing on the most informative variables. These models are particularly effective in uncovering causal and probabilistic relationships 
-            in data, making them a robust foundation for explainable decision-support systems. 
-            Within the broader field of Explainable AI (XAI), my research emphasizes algorithmic strategies to enhance the interpretability of complex models applied to 
-            structured tabular data. By developing methodologies that allow users to trace, understand, and trust the reasoning behind model predictions, this project seeks to bridge 
-            the gap between high predictive performance and interpretability.
-            
-        </p>
-        <h4> Relevant Publications</h4> 
-        <ol>
-            <li> LAPLACE, Arxiv, 2023 <a href="https://arxiv.org/pdf/2310.00570.pdf" target="_blank">paper</a>, <a href="https://github.com/Simon-tan/LaPLACE" target="_blank">code</a> </li>
-            <li> (FSBN & SSBN), ICDM 2023, CXAI <a href="https://www.computer.org/csdl/proceedings-article/icdmw/2023/816400a966/1UjHSKsoytO" target="_blank">paper</a></li>
-            <li> GBNC, DSAA, 2014 <a href="https://ieeexplore.ieee.org/abstract/document/7058101" target="_blank">paper</a></li>
-            <li> GMBNC, MLDM, 2014 <a href="https://link.springer.com/chapter/10.1007/978-3-319-08979-9_2" target="_blank">paper</a></li>
-            <li> MBNC, Computer Science and Application, 2014 <a href="https://www.oalib.com/research/5205821" target="_blank">paper in Chinese</a></li>
-            
-        </ol>
-      </div>
-      <!-- Add more project cards -->
-    </div>
+  <section id="opportunities" class="about">
+    <h2> Master/Ph.D. opportunities</h2>  
   </section>
-
-  <section id="service" class="publications"> 
   
-    <h2>Service</h2>
 
-    <ol>
-      <li>Program Committee:  AIED 2020-2025, BigData 2022-2025, EDM 2023-2025, ICCE 2025, ICDM 2025 </li>
-      <li> Review Editor: Editorial Board of Frontiers in AI 2022-2025</li>
-      <li> Reviewer: AIED, EDM, ToE, TLT, DMKD, MDPI Info, BigData </li>
-      <li> Session Chair: ICDM Ph.D. forum </li>
-    </ol>
+  <div class="container" style="text-align: justify;">
+    <p>
+      I am looking for students with a strong background in computer science, machine learning, or related fields, and a passion for research to join <a href="lab.html" target="_blank">HI+AI Lab</a> at the <a href="https://ait.ac.th/" target="_blank">Asian Institute of Technology</a> in Thailand, 
+      an English-speaking, research-focused postgraduate institute located just 40 km from Bangkok. 
+      AIT offers a peaceful, multicultural environment, low living costs, and a variety of scholarship opportunities to help you focus on your research and enjoy a balanced life.
+      
+      <br>
+      <br>
+      Scholarships for Master's and Ph.D. programs are available through <a href="https://ait.ac.th/financial-aid/" target="_blank">several competitive programs</a>, each with its own application deadline.
+      To be considered for all types of scholarship opportunities, prospective students are strongly encouraged to submit their applications as early as possible (see our <a href="https://ait.ac.th/admissions/" target="_blank">application deadlines</a>). 
+      <br>
+      <br>
 
+      <!--I am looking for students with a strong background in computer science, machine learning, or related fields, and a passion for research.
 
-    <ul>
-      <li>
-        Conferences
-        <ul>
-          <li><a href="https://ieeexplore.ieee.org/xpl/conhome/1000179/all-proceedings" target="_blank">ICDM: IEEE International Conference on Data Mining</a></li>
-          <li><a href="https://iaied.org/conferences" target="_blank">AIED: International Conference on Artificial Intelligence in Education</a></li>
-          <li><a href="https://educationaldatamining.org/conferences/" target="_blank">EDM: International Conference on Educational Data Mining</a></li>
-          <li><a href="https://bigdataieee.org/" target="_blank">BigData: IEEE International Conference on BigData</a></li>
-          <li><a href="https://dblp.org/db/conf/icce/index.html" target="_blank">ICCE: International Conference on Computers in Education</a></li>
-        </ul>
-      </li>
-      <li>
-        Journals
-        <ul>
-          <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4620076" target="_blank">TLT: IEEE Transactions on Learning Technologies</a></li>
-          <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=13" target="_blank">ToE: IEEE Transactions on Education</a></li>
-          <li><a href="https://link.springer.com/journal/10618" target="_blank">DMKD: Data Mining and Knowledge Discovery</a></li>
-          <li><a href="https://www.mdpi.com/journal/information" target="_blank">MDPI Info: Journal of Information</a></li>
-          <li><a href="https://www.frontiersin.org/journals/artificial-intelligence/sections/ai-for-human-learning-and-behavior-change" target="_blank">Editorial Board: AI for Human Learning and Behavior Change, Frontiers in Artificial Intelligence</a></li>
-        </ul>
-      </li>
-    </ul>
+      If you are interested, please contact me with your CV and academic transcripts at least one month before the <a href="https://ait.ac.th/admissions/" target="_blank">application deadlines</a> to discuss potential research plans.
+      
+      <br>     
+      <br>
+      If you are already an AIT student and interested in my research, you are welcome to contact me directly.-->   
+    </p>
+  </div>
 
-    </section>
-
-
-  <section id="activities" class="publications"> 
-    <h2>Activities</h2>
-
-    <ul>
-      <li>
-        Invited talks
-        <ul>
-          <li>NUS AI Health Community, National University of Singapore - Singapore, Aug 2024</li>
-          <li>SODA, Inria - Saclay, Paris, Dec 2021 </li>
-          <li>MOCAH, LIP6, Sorbonne Université, Paris, Nov 2021</li>
-          <li>D-VET, EPFL, Oct 2021</li>
-          <li>Yong Scholar Forum, Beijing Normal University, Dec 2020</li>
-        </ul>
-      </li>
-      <li>
-        Visiting
-        <ul>
-          <li>Singapore Management University, Singapore, 2018-2019</li>
-          <li>National Institute of Informatics, Tokyo, 2017-2018</li>
-        </ul>
-      </li>
-    </ul>
-
-
+  <section id="collaborations" class="about">
     
-    </section>
-
-
+  
 
   
+    
+  
+
+ 
+  
+
+
+
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
@@ -274,7 +126,6 @@
 
   <footer>
     © 2025 Sein Minn – Built with HTML & CSS
-  </footer>
-
+  </footer>  
 </body>
 </html>
